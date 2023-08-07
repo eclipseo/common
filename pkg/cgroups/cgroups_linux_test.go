@@ -47,21 +47,21 @@ func TestResources(t *testing.T) {
 	wtDevices := []*configs.WeightDevice{}
 	devices := []*configs.ThrottleDevice{}
 	dev1 := &configs.ThrottleDevice{
-		BlockIODevice: configs.BlockIODevice{
+		blockIODevice: configs.blockIODevice{
 			Major: 1,
 			Minor: 3,
 		},
 		Rate: 2097152,
 	}
 	dev2 := &configs.ThrottleDevice{
-		BlockIODevice: configs.BlockIODevice{
+		blockIODevice: configs.blockIODevice{
 			Major: 3,
 			Minor: 10,
 		},
 		Rate: 2097152,
 	}
 	dev3 := &configs.WeightDevice{
-		BlockIODevice: configs.BlockIODevice{
+		blockIODevice: configs.blockIODevice{
 			Major: 5,
 			Minor: 9,
 		},
